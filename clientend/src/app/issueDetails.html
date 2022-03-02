@@ -1,0 +1,29 @@
+<p>{{desc}}</p>
+ <table>
+<tr>
+    <th>Issue No</th> 
+    <th>Description</th>
+    <th>Complete</th>
+</tr>
+
+
+<tr *ngFor="let data of totalIssue">
+    <td> {{data.issueno}}</td>
+    <td> {{data.desc}}</td>
+    <td> {{data.completed}}</td>
+    
+
+
+</tr>
+
+
+
+</table> 
+
+<!-- <ul>
+    <li *ngFor="let cereal of cereals">
+     <h2>
+      {{cereal.name}}
+     </h2> 
+    </li>
+  </ul> -->

@@ -1,0 +1,31 @@
+<form #issueForm="ngForm" (ngSubmit)="onSubmit(issueForm.value)">
+ 
+    <p>
+      <label for="issueno">Issue Number</label>
+      <input type="text" name="issueno" [ngModel]>
+    </p>
+   
+    <p>
+      <label for="desc">Description</label>
+      <input type="text" name="desc" [ngModel]>
+    </p>
+
+    <p>
+        <label for="completed">Completed </label>
+        <select name="completed" id="completed" [ngModel]>
+          <option selected="" value=""></option>
+          <option value="yes">
+           Yes
+          </option>
+          <option value ="no">
+           NO
+           </option>
+        </select>
+        </p>
+
+        <p>
+            <button type="submit">Submit</button>
+          </p>
+
+    </form>
+   
